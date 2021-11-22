@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro Assignment</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    <!-- main Css Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <img src="images/mac.png" alt="Mac book Pro">
+            </div>
+            <div class="col-6">
+                <div class="mac-description">
+                    <h1 class="mac-title">Customize your Blue 24-inch iMac with Apple M1 chip</h1>
+                    <p class="mac-short-paragraph">Apple M1 Chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU and 16-core Neural Engine *GB unified memory 256GB SSD storage Two Thunderbolt /USB 4 ports Magic Mouse Magic Keyboard US English</p>
+                </div>
+                <div class="mac-memory">
+                    <h3 class="bold-title">Memory</h3>
+                    <div class="btn-group">
+                        <button class='btn eight-GB'>8GB unified memory</button>
+                        <button class='btn sixteen-GB'>16GB unified memory</button>
+                    </div>
+                </div>
+                <div class="mac-storage">
+                    <h3 class="bold-title">Storage</h3>
+                    <div class="btn-group">
+                        <button class='btn 256-GB'>256GB SSD storage</button>
+                        <button class='btn 512-GB'>512GB SSD storage</button>
+                        <button class='btn 1-TB'>1TB SSD storage</button>
+                    </div>
+                </div>
+                <div class="mac-delivery">
+                    <h3 class="bold-title">Choose your delivery option</h3>
+                    <div class="btn-group">
+                        <button class='btn normal-delivery'>Friday,Aug 25 Free Prime Delivery</button>
+                        <button class='btn early-delivery'>Friday,Aug 21 Delivery Charge $20</button>
+                    </div>
+                </div>
+                <!-- cost calculation -->
+                <div class="costs">
+                    <div class="cost">
+                        <h5>Best Price</h5> <h5>$ <span id="base_price">1299</span> </h5>
+                    </div>            
+                    <div class="cost">
+                        <h5>Extra Memory Cost</h5> <h5>$ <span id="memory_cost">0</span> </h5>
+                    </div>            
+                    <div class="cost">
+                        <h5>Extra Storage Cost</h5> <h5>$ <span id="storage_cost">0</span> </h5>
+                    </div>            
+                    <div class="cost">
+                        <h5>Delivery charge</h5> <h5>$ <span id="delivery_cost">0</span> </h5>
+                    </div>
+                    <hr>
+                    <div class="cost">
+                        <h5>Total Price</h5> <h5>$ <span id="total_cost">1299</span> </h5>
+                    </div>
+                    <!-- promo code part  -->
+                    <p class="promo-text">Add Pomo Code</p> 
+                    <div class="promo_code">
+                        <input type="text" id="code_input">
+                        <button id="promo_code_btn">Apply</button>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+        <hr>
+        <h2 class="discount_price">Total: $ <span id="discount_price">1299</span> </h2>
+    </div>
+    <!-- main JS file -->
+    <script src="app.js"></script>
+</body>
+</html>
